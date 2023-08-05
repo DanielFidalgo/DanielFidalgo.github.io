@@ -27,7 +27,12 @@
             link.type = 'text/css';
             link.href = `assets/css/orbit-${Math.floor(Math.random() * 5)+1}.css`;
             link.media = 'all';
-            head.appendChild(link);
+            
+            var event; 
+                event = document.createEvent("addedCss");
+                event.initEvent("addedCss", true, true);
+                event.eventName = "addedCss";
+                element.dispatchEvent(event);
         }
     </script>
 </head> 
@@ -225,7 +230,7 @@
         
 </body>
 <script>
-    document.addEventListener('DOMContentLoaded', (e) => {
+    document.addEventListener('addedCss', (e) => {
         document.getElementsByTagName('body')[0].style.display = 'block'
     })
 </script>
