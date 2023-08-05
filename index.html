@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Daniel Fidalgo Silva</title>
+    <title>Daniel Fidalgo</title>
     
     <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daniel Fidalgo Silva's Resume">
+    <meta name="description" content="Daniel Fidalgo's Resume">
     <meta name="author" content="">    
     <link rel="shortcut icon" href="favicon.ico">  
     <!-- Google Font -->
@@ -17,7 +17,20 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/orbit-1.css">
+    <script>
+        var cssId = 'theme-style'; 
+            if (!document.getElementById(cssId))
+            {
+                var head  = document.getElementsByTagName('head')[0];
+                var link  = document.createElement('link');
+                link.id   = cssId;
+                link.rel  = 'stylesheet';
+                link.type = 'text/css';
+                link.href = `assets/css/orbit-${Math.floor(Math.random() * 5)+1}.css`;
+                link.media = 'all';
+                head.appendChild(link);
+            }
+    </script>
 </head> 
 
 <body>
@@ -25,40 +38,39 @@
         <div class="sidebar-wrapper">
             <div class="profile-container">
                 <img class="profile" src="assets/images/profile.png" alt="" />
-                <h1 class="name">Daniel Fidalgo Silva</h1>
+                <h1 class="name">Daniel Fidalgo</h1>
                 <h3 class="tagline">Software Engineer / Architect</h3>
             </div><!--//profile-container-->
             
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: daniel.fidalgo@gmail.com">daniel.fidalgo@gmail.com</a></li>
+                    <li class="email"><i class="fa-solid fa-envelope"></i><a href="mailto: daniel.fidalgo@gmail.com">daniel.fidalgo@gmail</a></li>
                     <li class="phone"><i class="fa-solid fa-phone"></i><a href="tel:204 558 5204">(204)558-5204</a></li>
                     <li class="website"><i class="fa-solid fa-globe"></i><a href="https://dfidalgo.com" target="_blank">dfidalgo.com</a></li>
-                    <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/dfidalgo/" target="_blank">linkedin.com/in/dfidalgo/</a></li>
-                    <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/DanielFidalgo" target="_blank">github.com/DanielFidalgo</a></li>
+                    <li class="linkedin"><i class="fa-brands fa-linkedin-in"></i><a href="https://www.linkedin.com/in/dfidalgo/" target="_blank">dfidalgo</a></li>
+                    <li class="github"><i class="fa-brands fa-github"></i><a href="https://github.com/DanielFidalgo" target="_blank">DanielFidalgo</a></li>
                     <!--li class="twitter"><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li-->
                 </ul>
             </div><!--//contact-container-->
             <div class="education-container container-block">
                 <h2 class="container-block-title">Education</h2>
                 <div class="item">
-                    <h4 class="degree">MSc in Computer Science</h4>
-                    <h5 class="meta">University of London</h5>
-	                    <div class="time">2016 - 2018</div>
+                    <h4 class="degree">BSc in Computer Science</h4>
+                    <h5 class="meta">UniCEUB - Centro Universitario de Brasilia</h5>
+	                <div class="time">2004 - 2014</div>
                 </div><!--//item-->
-                <div class="item">
+                <!-- <div class="item">
                     <h4 class="degree">BSc in Applied Mathematics</h4>
                     <h5 class="meta">Bristol University</h5>
                     <div class="time">2012 - 2016</div>
-                </div><!--//item-->
+                </div>//item -->
             </div><!--//education-container-->
             
             <div class="languages-container container-block">
                 <h2 class="container-block-title">Languages</h2>
                 <ul class="list-unstyled interests-list">
-                    <li>English <span class="lang-desc">(Native)</span></li>
-                    <li>French <span class="lang-desc">(Professional)</span></li>
-                    <li>Spanish <span class="lang-desc">(Professional)</span></li>
+                    <li>English <span class="lang-desc">(Fluent)</span></li>
+                    <li>Portuguese <span class="lang-desc">(Native)</span></li>
                 </ul>
             </div><!--//interests-->
             
@@ -78,7 +90,9 @@
             <section class="section summary-section">
                 <h2 class="section-title"><span class="icon-holder"><i class="fa-solid fa-user"></i></span>Career Profile</h2>
                 <div class="summary">
-                    <p>Summarise your career here lorem ipsum dolor sit amet, consectetuer adipiscing elit. You can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/" target="_blank">download this free resume/CV template here</a>. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
+                    <p>Software Engineer with 17 years of experience. Strong passion for Software Development with experience in Java, Kotlin, Python and C# with working knowledge in distributed environments and cloud.</p>
+                    <p>Delivered more than 40 projects for clients in government, financial, touristic, corporate, advertising and logistics industry. Solved problems like environment architecture and fine tuning to meet the expected user workload, conducted performance tests and code refactoring to increase system’s performance and built the system from the ground up as quick as lightning. </p>
+                    <p>Breaks monoliths into microservices. Builds scalable systems.</p>
                 </div><!--//summary-->
             </section><!--//section-->
             
@@ -88,10 +102,10 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Lead Developer</h3>
+                            <h3 class="job-title">Senior Software Developer</h3>
                             <div class="time">2023 - Present</div>
                         </div><!--//upper-row-->
-                        <div class="company">Startup Hubs, San Francisco</div>
+                        <div class="company">EQ3, Winnipeg</div>
                     </div><!--//meta-->
                     <div class="details">
                         <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>  
@@ -102,10 +116,10 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">Senior Software Engineer</h3>
-                            <div class="time">2018 - 2023</div>
+                            <h3 class="job-title">Principal Software Engineer</h3>
+                            <div class="time">2022 - 2023</div>
                         </div><!--//upper-row-->
-                        <div class="company">Google, London</div>
+                        <div class="company">Axlehire, Remote</div>
                     </div><!--//meta-->
                     <div class="details">
                         <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
@@ -116,10 +130,10 @@
                 <div class="item">
                     <div class="meta">
                         <div class="upper-row">
-                            <h3 class="job-title">UI Developer</h3>
-                            <div class="time">2016 - 2018</div>
+                            <h3 class="job-title">Senior Team Lead</h3>
+                            <div class="time">2019 - 2022</div>
                         </div><!--//upper-row-->
-                        <div class="company">Amazon, London</div>
+                        <div class="company">SkipTheDishes, Winnipeg</div>
                     </div><!--//meta-->
                     <div class="details">
                         <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
