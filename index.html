@@ -17,27 +17,10 @@
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Theme CSS -->  
-    <script>
-        var cssId = 'theme-style'; 
-        if (!document.getElementById(cssId)) {
-            var head  = document.getElementsByTagName('head')[0];
-            var link  = document.createElement('link');
-            link.id   = cssId;
-            link.rel  = 'stylesheet';
-            link.type = 'text/css';
-            link.href = `assets/css/orbit-${Math.floor(Math.random() * 5)+1}.css`;
-            link.media = 'all';
-            
-            var event; 
-                event = document.createEvent("addedCss");
-                event.initEvent("addedCss", true, true);
-                event.eventName = "addedCss";
-                element.dispatchEvent(event);
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/orbit-1.css"> 
 </head> 
 
-<body style="display:none">
+<body>
     <div class="wrapper mt-lg-5">
         <div class="sidebar-wrapper">
             <div class="profile-container">
@@ -81,9 +64,9 @@
             <div class="interests-container container-block">
                 <h2 class="container-block-title">Interests</h2>
                 <ul class="list-unstyled interests-list">
-                    <li>Climbing</li>
-                    <li>Snowboarding</li>
-                    <li>Cooking</li>
+                    <li>Motorcycles</li>
+                    <li>OffRoading</li>
+                    <li>Hydroponics</li>
                 </ul>
             </div><!--//interests-->
             
@@ -112,8 +95,8 @@
                         <div class="company">EQ3, Winnipeg</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p>  
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                        <p>Software Developer on for the retail e-commerce to support and showcase product inventory.<br/>
+                            <ul><li>Maintenance on Java Backend based on Spring boot, Java 17, Flyway, and JOOQ.</li></ul></p> 
                     </div><!--//details-->
                 </div><!--//item-->
                 
@@ -126,8 +109,13 @@
                         <div class="company">Axlehire, Remote</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
-                        
+                        <p>Being part of the technical counsel, proposed technical guidance on software architecture and development practices. Sought projects in the routing domain to complement current solutions.<br/>
+                            <ul><li>Developed automated shipment allocation to support routing process in Kotlin</li>
+                                <li>Proposed new Kotlin architecture following the S.O.L.I.D. principles and domain driven design.</li>
+                                <li>Proposed new Java architecture following the S.O.L.I.D. principles and domain driven design.</li>
+                                <li>Proposed new CI/CD practices using Jenkins declarative pipelines, increasing development productivity.</li>
+                                <li>Experimented with GCP’s serverless offering to migrate the current VRP solution.</li>
+                                <li>Made the routing solution more concise and straightforward by fixing a calculation bug.</li></ul></p>
                     </div><!--//details-->
                 </div><!--//item-->
                 
@@ -140,7 +128,15 @@
                         <div class="company">SkipTheDishes, Winnipeg</div>
                     </div><!--//meta-->
                     <div class="details">
-                        <p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>  
+                        <p>Leading the dispatch logistics team delivered incremental features to the system while applying the microservices architecture increasing system reliability and performance.<br/>
+                            <ul><li>Reduced “Placed to Delivered” time from average 45 min to 29 min.</li>
+                                <li>Scaled and improved the system to perform up to 430k deliveries on peak Friday, executing up to 22k courier analises per minute.</li>
+                                <li>Migrated all stack from java 8 to java 11 and then java 17 to keep the latest LTS version.</li>
+                                <li>Reduced human intervention on the logistics assignment problem to less than 0.1%.</li>
+                                <li>Drew technical architectural specifications that supported system and feature development.</li>
+                                <li>Remodeled the Delivery domain database applying normalization to relational tables increasing data consistency and reducing occurrences of race conditions due to concurrent updates to tables.</li>
+                                <li>Conducted technical interviews and set up a new team that focused on streamlining the delivery offer to new revenue opportunities.</li>
+                                <li>Mentored and guided team members conducting periodic one on one meetings, setting professional and personal objectives, building team ownership.</li></ul></p>  
                     </div><!--//details-->
                 </div><!--//item-->
                 
@@ -229,10 +225,5 @@
     </footer><!--//footer-->
         
 </body>
-<script>
-    document.addEventListener('addedCss', (e) => {
-        document.getElementsByTagName('body')[0].style.display = 'block'
-    })
-</script>
 </html> 
 
